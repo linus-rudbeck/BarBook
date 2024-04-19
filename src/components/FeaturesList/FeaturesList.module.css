@@ -1,0 +1,14 @@
+@counter-style checkbox-emoji {
+    system: cyclic;
+    symbols: "✅";
+    suffix: " ";
+}
+
+.features{
+    list-style-type: checkbox-emoji;
+    padding-left: 2rem;
+}
+
+.features li{
+    margin: 1rem 0;
+}

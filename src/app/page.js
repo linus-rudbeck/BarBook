@@ -1,95 +1,32 @@
-import Image from "next/image";
+import FeaturesList from "@/components/FeaturesList/FeaturesList";
 import styles from "./page.module.css";
 
+const features = [
+  "Find available appointment slots with your favorite barbers",
+  "Book your next haircut in just a few clicks",
+  "Receive reminders and updates about your appointment",
+  "Manage your bookings easily from any device",
+];
+
+export const metadata = { title: "Home | Barbook" };
+
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+  return (<>
+    <h2>Home</h2>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    <p>
+        Futurama är en amerikansk animerad science fiction-situationskomediserie skapad av
+        Matt Groening (skapare av Simpsons) och David X. Cohen. De fyra första säsongerna
+        sändes mellan den 28 mars 1999 och den 10 augusti 2003 på TV-kanalen Fox. Fyra filmer
+        gavs ut direkt till dvd mellan 2007 och 2009, men klipptes även om till en femte säsong
+        som började sändas 23 mars 2008 på Comedy Central. Säsong 6 och 7 sändes mellan 24 juni
+        2010 och 4 september 2013 på Comedy Central. Den 22 februari 2022 meddelade streamingtjänsten
+        Hulu att de hade återupplevt serien och att de skulle göra 20 avsnitt till av serien.
+        Säsong 8 hade premiär den 23 juli 2023.
+      </p>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <hr />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+      <FeaturesList features={features} />
+  </>);
 }

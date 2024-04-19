@@ -1,0 +1,11 @@
+.footer{
+    padding: 1rem;
+    text-align: center;
+    background: var(--secondary-bg);
+    color: var(--secondary-fg);
+
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+}
